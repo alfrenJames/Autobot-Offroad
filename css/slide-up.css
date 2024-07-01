@@ -1,0 +1,36 @@
+.gotopbtn
+{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 12px;
+  top: 75%;
+  left: 8%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 32px;
+}
+.gotopbtn:after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    border-radius: 12px;
+    transition: all .35s;
+    z-index: -1;
+  }
+  
+  .gotopbtn:hover{
+    color: #fff;
+  }
+  
+  .gotopbtn:hover:after{
+    width: 100%;
+  }
