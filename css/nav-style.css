@@ -3,12 +3,17 @@ nav{
     justify-content: space-around;
     min-height: 8vh;
     font-family: 'Roboto Condensed', sans-serif;
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0); */
+    background: rgb(0, 0, 0, .1);
     color: rgb(255, 255, 255);
     padding-top: 25px;
     padding-bottom: 33px;
-    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 }
+
 .nav-links{
     display: flex;
     /* background-color: red; */
@@ -70,7 +75,7 @@ nav{
     }
     .nav-links{
         position: absolute;
-        opacity: 80%;
+        opacity: 95%;
         right: 0px;
         height: 82vh;
         top:12vh;

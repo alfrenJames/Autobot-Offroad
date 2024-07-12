@@ -1,46 +1,46 @@
 .merchandise{
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column; */
+    flex-direction: column;
 }
 
-#carousel2 img{
+.merchandise .carousel-container{
     width: 82vw;
 }
 
 #carousel1 img{
-    width: 64vw;
+    width: 100%;
 }
 
-.carousel-container {
+.merchandise .carousel-container {
     max-width: 100%;
     height: auto;
 }
 
-.carousel {
+.merchandise .carousel {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.carousel-inner {
+.merchandise .carousel-inner {
     display: flex;
     overflow: hidden;
     width: 100%;
 }
 
-.carousel-item {
+.merchandise .carousel-item {
     min-width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item img {
+.merchandise .carousel-item img {
     width: 100%;
     display: block;
 }
 
-.carousel-indicators {
+.merchandise .carousel-indicators {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -48,13 +48,73 @@
     width: 100%;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
+.featured-build{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 82vw;
+    height: 100%;
+    margin: 0 auto;
 }
 
+.featured-build .carousel-container{
+    margin: 0 auto;
+}
+
+#carousel2 img{
+    width: 100%;
+}
+
+
+.featured-build .carousel-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-build .carousel {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.featured-build .carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.featured-build .carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured-build .carousel-item img {
+    width: 100%;
+    height: 82vh;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-build .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: red;
+  }

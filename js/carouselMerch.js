@@ -1,5 +1,6 @@
 let currentSlideIndex1 = 0;
 let currentSlideIndex2 = 0;
+let currentSlideIndex3 = 0;
 
 function showSlide(index, carouselNumber) {
     let slides, dots, currentSlideIndex;
@@ -41,4 +42,5 @@ function currentSlide(index, carouselNumber) {
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlideIndex1, 1);
     showSlide(currentSlideIndex2, 2);
+    showSlide(currentSlideIndex3, 3);
 });

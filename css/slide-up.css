@@ -13,6 +13,7 @@
   line-height: 60px;
   color: white;
   font-size: 32px;
+  z-index: 2;
 }
 .gotopbtn:after{
     position: absolute;
